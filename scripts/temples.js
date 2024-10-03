@@ -12,16 +12,16 @@ function updateFooter() {
 
 // Hamburger menu functionalit
 
-// Obtener referencias a los elementos
+// Obtener referencias al botón hamburguesa y al menú de navegación
 const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+const navMenu = document.querySelector('nav ul');
 
-// Agregar evento de clic al botón de hamburguesa
+// Agregar evento al botón hamburguesa
 hamburger.addEventListener('click', () => {
-    // Alternar la visibilidad del menú de navegación
     if (navMenu.style.display === 'flex') {
-        navMenu.style.display = 'none';
+        navMenu.style.display = 'none'; // Ocultar el menú
     } else {
-        navMenu.style.display = 'flex';
+        navMenu.style.display = 'flex'; // Mostrar el menú
     }
 });
+
