@@ -10,20 +10,18 @@ function updateFooter() {
     footer.innerHTML = `&copy; ${year} | Last Modified: ${lastModified}`;
 }
 
-// Hamburger menu functionality
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.createElement('div');
-    hamburger.classList.add('hamburger');
-    hamburger.innerHTML = '&#9776;'; // Hamburger icon
-    const nav = document.querySelector('nav');
-    nav.insertBefore(hamburger, nav.firstChild); // Insert hamburger before nav
+// Hamburger menu functionalit
 
-    hamburger.addEventListener('click', () => {
-        const menu = nav.querySelector('ul');
-        menu.classList.toggle('show'); // Toggle menu visibility
-        hamburger.innerHTML = menu.classList.contains('show') ? '&times;' : '&#9776;'; // Change to 'X' when open
-    });
+// Obtener referencias a los elementos
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-    updateFooter(); // Update footer with year and last modified date
+// Agregar evento de clic al botón de hamburguesa
+hamburger.addEventListener('click', () => {
+    // Alternar la visibilidad del menú de navegación
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'block';
+    }
 });
-

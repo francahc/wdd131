@@ -15,11 +15,11 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 15px;
 }
 
 nav {
-    display: flex; /* Use Flexbox for navigation */
+    display: block; /* Use Flexbox for navigation */
     justify-content: space-between; /* Space between items */
     align-items: center; /* Center items vertically */
 }
@@ -44,6 +44,7 @@ nav a {
 
 nav a:hover {
     background-color: #45a049; /* Change background on hover */
+    text-decoration: underline double;
 }
 
 .hamburger {
@@ -71,8 +72,10 @@ main {
 }
 
 figure {
-    margin: 0 0 20px; /* Margin between figures */
+    
     text-align: center; /* Center captions */
+    display: inline-block; /* Allows figures to align horizontally */
+    margin: 10px;
 }
 
 img {
@@ -88,7 +91,7 @@ img {
 h2 {
     text-align: center; /* Centra el texto */
     margin-bottom: 20px; /* Espacio debajo del encabezado */
-    font-size: 24px; /* Tamaño de la fuente */
+    font-size: 25px; /* Tamaño de la fuente */
     color: #333; /* Color del texto */
 }
 
@@ -146,15 +149,32 @@ main {
     margin: 20px;
 }
 
-figure {
-    display: inline-block; /* Allows figures to align horizontally */
-    margin: 10px;
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    #nav-menu {
+        display: none; /* Oculta el menú en móviles */
+    }
+
+    #hamburger {
+        display: block; /* Muestra el botón de menú hamburguesa */
+        background: none;
+        border: none;
+        font-size: 30px; /* Ajusta el tamaño del icono */
+        color: white; /* Color del icono */
+        cursor: pointer;
+    }
 }
 
-img {
-    max-width: 100%;
-    height: auto; /* Responsive images */
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 601px) {
+    #hamburger {
+        display: none; /* Oculta el botón en pantallas grandes */
+    }
+
+    #nav-menu {
+        display: block; /* Muestra el menú en pantallas grandes */
+        
+    }
 }
-
-/* Add other styles as needed */
-
