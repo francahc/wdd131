@@ -174,12 +174,14 @@ main {
 }
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 601px) {
-    #hamburger {
-        display: none; /* Oculta el botón en pantallas grandes */
+    #nav-menu {
+        display: flex; /* Asegura que el menú esté en flexbox para alinear los elementos horizontalmente */
+        flex-direction: row; /* Los items del menú se alinearán en fila */
+        justify-content: center; /* Centra los elementos del menú horizontalmente */
+        gap: 20px; /* Añade espacio entre los botones */
     }
 
-    #nav-menu {
-        display: block; /* Muestra el menú en pantallas grandes */
-        
+    #hamburger {
+        display: none; /* Oculta el botón hamburguesa en pantallas grandes */
     }
 }
