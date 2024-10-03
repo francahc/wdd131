@@ -1,0 +1,160 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Replace with your chosen font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+header {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex; /* Use Flexbox for navigation */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default for hamburger menu */
+}
+
+nav ul.show {
+    display: flex; /* Show the menu items when toggled */
+    flex-direction: column; /* Stack items vertically */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #45a049; /* Change background on hover */
+}
+
+.hamburger {
+    display: block; /* Show hamburger menu icon */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main styles */
+main {
+    max-width: 1200px; /* Limit width of main content */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    background-color: white; /* White background for contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Responsive Grid Layout */
+main {
+    display: flex; /* Cambia a flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /
+}
+
+figure {
+    margin: 0 0 20px; /* Margin between figures */
+    text-align: center; /* Center captions */
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #D1D39C; 
+    padding: 1px;
+    box-shadow: 0 0 30px gray;
+  
+    
+}
+
+h2 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    font-size: 24px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+
+/* Media Query for larger screens */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+}
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+button {
+    margin: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    display: flex; /* Usar Flexbox para alinear horizontalmente */
+    justify-content: center; /* Centrar los botones en el contenedor */
+   
+
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Use your Google Font */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    text-align: center; /* Center content */
+    margin: 20px;
+}
+
+figure {
+    display: inline-block; /* Allows figures to align horizontally */
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Responsive images */
+}
+
+/* Add other styles as needed */
+
