@@ -19,9 +19,9 @@ const navMenu = document.getElementById('nav-menu');
 // Agregar evento de clic al botón de hamburguesa
 hamburger.addEventListener('click', () => {
     // Alternar la visibilidad del menú de navegación
-    if (navMenu.style.display === 'block') {
+    if (navMenu.style.display === 'flex') {
         navMenu.style.display = 'none';
     } else {
-        navMenu.style.display = 'block';
+        navMenu.style.display = 'flex';
     }
 });

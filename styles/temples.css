@@ -151,22 +151,27 @@ main {
 
 
 
+#hamburger {
+    display: none;
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (max-width: 600px) {
-    #nav-menu {
-        display: none; /* Oculta el menú en móviles */
+    nav ul {
+        display: none; /* Ocultar el menú inicialmente */
+        flex-direction: column;
+        align-items: center;
     }
 
     #hamburger {
-        display: block; /* Muestra el botón de menú hamburguesa */
+        display: block; /* Mostrar el botón hamburguesa */
         background: none;
         border: none;
-        font-size: 30px; /* Ajusta el tamaño del icono */
-        color: white; /* Color del icono */
+        font-size: 30px;
+        color: white;
         cursor: pointer;
     }
 }
-
 /* Estilos para pantallas grandes */
 @media screen and (min-width: 601px) {
     #hamburger {
