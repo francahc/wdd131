@@ -54,15 +54,12 @@ nav a:hover {
 
 
 main {
+    display: grid;
     max-width: 1200px; 
     margin: 20px auto;
     padding: 20px;
     background-color: white; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-
-main {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
@@ -83,6 +80,7 @@ img {
     border: 1px solid #D1D39C; 
     padding: 1px;
     box-shadow: 0 0 30px gray;
+    margin-top: 80px;
   
     
 }
@@ -90,8 +88,11 @@ img {
 h2 {
     text-align: center; 
     margin-bottom: 20px;
-    font-size: 25px; 
     color: #333; 
+    font-size: 2rem;
+    
+    
+
 }
 
 
@@ -183,3 +184,6 @@ main {
         display: none; 
     }
 }
+
+
+
