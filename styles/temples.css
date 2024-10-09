@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50; 
+    background-color: rgb(76, 175, 175); 
     color: white; 
     padding: 1rem;
     text-align: center;
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #45a049; 
+    background-color: #1e5e6f; 
     text-decoration: underline double;
 }
 
@@ -62,7 +62,7 @@ main {
 h2 {
     text-align: center; 
     margin-bottom: 20px;
-    color: #333; 
+    color: rgb(76, 175, 175); ; 
     font-size: 2rem;
 }
 
@@ -79,9 +79,10 @@ figure {
 img {
     width: 400px; 
     height: 300px; 
-    border: 1px solid #D1D39C; 
+    border: 1px solid rgb(76, 175, 175); ; 
     padding: 1px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px rgb(76, 175, 175); 
+    
 }
 
 footer {
