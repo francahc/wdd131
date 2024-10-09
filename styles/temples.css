@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Roboto', sans-serif; 
     margin: 0;
@@ -9,7 +8,6 @@ body {
 header {
     background-color: #4CAF50; 
     color: white; 
-    
     padding: 1rem;
     text-align: center;
 }
@@ -23,6 +21,7 @@ nav {
     justify-content: space-between; 
     align-items: center; 
 }
+
 nav ul {
     list-style: none; 
     padding: 0;
@@ -52,37 +51,12 @@ nav a:hover {
     cursor: pointer;
 }
 
-
 main {
-    display: grid;
     max-width: 1200px; 
     margin: 20px auto;
     padding: 20px;
     background-color: white; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-}
-
-figure {
-    
-    text-align: center; 
-    display: inline-block; 
-    margin: 10px;
-}
-
-img {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #D1D39C; 
-    padding: 1px;
-    box-shadow: 0 0 30px gray;
-    margin-top: 80px;
-  
-    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -90,23 +64,33 @@ h2 {
     margin-bottom: 20px;
     color: #333; 
     font-size: 2rem;
-    
-    
-
 }
 
-
-@media (min-width: 600px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
 }
+
+figure {
+    text-align: center; 
+}
+
+img {
+    width: 400px; 
+    height: 300px; 
+    border: 1px solid #D1D39C; 
+    padding: 1px;
+    box-shadow: 0 0 30px gray;
+}
+
 footer {
     background-color: #f8f9fa;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
 }
+
 button {
     margin: 1rem;
     color: #fff;
@@ -116,44 +100,11 @@ button {
     font-size: 1.2rem;
     display: flex; 
     justify-content: center; 
-   
-
 }
-body {
-    font-family: 'Roboto', sans-serif; 
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #4CAF50; 
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-main {
-    text-align: center; 
-    margin: 20px;
-}
-
-
 
 #hamburger {
     display: none;
 }
-
 
 @media screen and (max-width: 600px) {
     nav ul {
@@ -171,6 +122,7 @@ main {
         cursor: pointer;
     }
 }
+
 /*grandes*/
 @media screen and (min-width: 601px) {
     #nav-menu {
@@ -184,6 +136,3 @@ main {
         display: none; 
     }
 }
-
-
-
