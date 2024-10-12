@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="...">
+    <meta name="author" content="Franca Harris">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 600px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> Costa Rica</h1>
+    </header>
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" type="image/webp" media="(max-width: 600px)">
+            <source srcset="images/hero-large.jpg" media="(max-width: 600px)">
+
+        
+            <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 601px)">
+            <source srcset="images/hero-medium.jpg" media="(min-width: 601px)">
+
+        
+            <img src="images/hero-medium.jpg" alt="Hero Image">
+        </picture>
+    </section>
+    <section class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <p>Today's forecast is sunny with scattered clouds.</p>
+        <img src="images/weather.svg" alt="Weather Icon" class="weather-icon-mobile">
+    </section>
+    
+    
+
+
+
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Franca Harris, Costa Rica.</p>
+        <p id="lastModified"></p>
+       
+    </footer>
+</body>
+</html>

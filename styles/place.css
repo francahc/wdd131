@@ -1,0 +1,51 @@
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+}
+
+header {
+    background-color: rgb(239, 48, 48); 
+    color: white; 
+    padding: 2rem;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+footer {
+    background-color: #3f85cb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+.weather-icon {
+    display: none; /* Oculto por defecto en vistas móviles */
+    font-size: 2rem; /* Ajusta el tamaño del emoticono en vistas más grandes */
+}
+
+.weather-icon-mobile {
+    width: 50px; /* Ajusta el tamaño del icono SVG para móviles */
+    height: auto;
+    display: block; /* Visible por defecto en móviles */
+    margin-top: 10px;
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 600px) {
+    .weather-icon {
+        display: inline; /* Muestra el emoticono en pantallas grandes */
+    }
+
+    .weather-icon-mobile {
+        display: none; /* Oculta el icono SVG en pantallas grandes */
+    }
+}
