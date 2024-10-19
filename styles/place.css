@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif; 
@@ -12,40 +17,136 @@ header {
     padding: 2rem;
     text-align: center;
 }
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+
 .hero {
     text-align: center;
     padding: 20px;
+    position: relative; 
+    background-color: #f0f0f0; 
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-container {
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 10px; 
+}
+
+.data, .weather {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 2px solid #ccc; 
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; 
+    margin: 0; 
+    text-align: center; 
+}
+
+
+@media screen and (min-width: 600px) {
+    .section-container {
+        position: absolute; 
+        top: 20%; 
+        left: 50%;
+        transform: translate(-50%, -20%);
+        display: flex;
+        gap: 20px; 
+        width: 90%; 
+        
+        
+    }
+    .data {
+        
+        align-self: flex-end; 
+    }
+    .data, .weather {
+      
+        min-height: 200px; 
+        min-width: 300px;
+    }
+    .data ul {
+        padding: 0; 
+        margin: 0; 
+        list-style: none !important; 
+    }
+
+    .weather {
+        align-self: flex-start; 
+        
+        
+     
+    }
+    .data h3, .weather h2 {
+        background-color: #6ca7e1; 
+        color: rgb(243, 249, 253);
+        padding: 10px;
+        border-radius: 5px; 
+        margin: 0; 
+        margin-left: -30px;
+    }
+
+    
+   
+
+    .weather-icon {
+        display: inline;
+    }
+
+    .weather-icon-mobile {
+        display: none; 
+    }
+}
+
+/* móviles */
+@media (max-width: 600px) {
+    .data, .weather {
+        background-color: transparent; 
+        border: 1px solid #3f85cb;
+        margin: 10px 0;
+        width: 100%; 
+        padding: 10px; 
+        text-align: center;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    h3, h2 {
+        margin: 0; 
+        padding: 5px 0; 
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+    }
+
+    .weather-icon {
+        display: none; 
+    }
+
+    .weather-icon-mobile {
+        display: block;
+        width: 40px !important;
+        height: 20px;
+        margin: 20px auto; 
+    }
+}
+
 footer {
     background-color: #3f85cb;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
-}
-.weather-icon {
-    display: none; /* Oculto por defecto en vistas móviles */
-    font-size: 2rem; /* Ajusta el tamaño del emoticono en vistas más grandes */
-}
-
-.weather-icon-mobile {
-    width: 50px; /* Ajusta el tamaño del icono SVG para móviles */
-    height: auto;
-    display: block; /* Visible por defecto en móviles */
-    margin-top: 10px;
-}
-
-/* Estilos para pantallas más grandes */
-@media screen and (min-width: 600px) {
-    .weather-icon {
-        display: inline; /* Muestra el emoticono en pantallas grandes */
-    }
-
-    .weather-icon-mobile {
-        display: none; /* Oculta el icono SVG en pantallas grandes */
-    }
 }
