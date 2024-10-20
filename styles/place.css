@@ -121,7 +121,7 @@ header {
 @media (max-width: 600px) {
     .data, .weather {
         background-color: transparent; 
-        border: 1px solid #3f85cb;
+        border: 1px solid var(--secondary-color);
         margin: 10px 0;
         width: 100%; 
         padding: 10px; 
@@ -156,7 +156,7 @@ header {
 }
 
 footer {
-    background-color: #3f85cb;
+    background-color: var(--secondary-color);;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
