@@ -46,9 +46,9 @@ header {
     padding: 10px; 
 }
 .section-container::after {
-    content: ""; /* Necesario para que funcione */
-    display: block; /* Cambiar según sea necesario */
-    clear: both; /* Se utiliza para limpiar flotantes */
+    content: ""; 
+    display: block; 
+    clear: both; 
 }
 
 
@@ -96,8 +96,8 @@ header {
         
      
     }
-    .data h3, .weather h2 {
-        background-color: #6ca7e1; 
+    .data h2, .weather h2 {
+        background-color: #3f85cb; 
         color: rgb(243, 249, 253);
         padding: 10px;
         border-radius: 5px; 
