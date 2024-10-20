@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="Explore Costa Rica, a country of rich biodiversity, vibrant culture and beautiful landscapes">
+    <title>Costa Rica</title>
+    <meta name="description" content="Explora Costa Rica, un país de rica biodiversidad, cultura vibrante y hermosos paisajes. Descubre datos fascinantes y el clima actual en esta joya de Centroamérica.">
     <meta name="author" content="Franca Harris">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
@@ -14,55 +14,43 @@
 </head>
 <body>
     <header>
-        <h1> Costa Rica</h1>
+        <h1>Costa Rica</h1>
     </header>
-    <section class="hero">
-        <picture>
-            <source srcset="images/hero-large.webp" type="image/webp" media="(max-width: 600px)">
-            <source srcset="images/hero-large.jpg" media="(max-width: 600px)">
-            <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 601px)">
-            <source srcset="images/hero-medium.jpg" media="(min-width: 601px)">
-            <img src="images/hero-medium.jpg" alt="Hero Image">
-        </picture>
-        <div class="section-container">
-            <section class="data">
-                <h3>Data</h3>
-                <ul>
-                    <li><strong>Area:</strong> 51.100 km²</li>
-                    <li><strong>Population:</strong> 5 044 197</li>
-                    <li><strong>Capital:</strong> San Jose</li>
-                    <li><strong>Language:</strong> Spanish</li>
-                    <li><strong>Time Zone:</strong> (GMT-6)</li>
-                    <li><strong>Calling Code:</strong> +506</li>
-                </ul>
-            </section>
-            <section class="weather">
-                <h2>Weather <span class="weather-icon">⛅</span></h2>
-                <p>Today's forecast is sunny with scattered clouds.</p>
-                <p>Wind Chill: <span id="windchill"></span></p> 
-                <img src="images/weather.svg" alt="Weather Icon" class="weather-icon-mobile">
-            </section>
-            
-        </div>
-    </section>
-    
-    
-    
-    
-    
-    
-    
-    
- 
 
-
-
-
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" type="image/webp" media="(max-width: 600px)">
+                <source srcset="images/hero-large.webp" media="(max-width: 600px)">
+                <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 601px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 601px)">
+                <img src="images/hero-medium.jpg" alt="Hero Image">
+            </picture>
+            <div class="section-container">
+                <section class="data">
+                    <h3>Data</h3>
+                    <ul>
+                        <li><strong>Area:</strong> 51.100 km²</li>
+                        <li><strong>Population:</strong> 5,044,197</li>
+                        <li><strong>Capital:</strong> San José</li>
+                        <li><strong>Language:</strong> Spanish</li>
+                        <li><strong>Time Zone:</strong> (GMT-6)</li>
+                        <li><strong>Calling Code:</strong> +506</li>
+                    </ul>
+                </section>
+                <section class="weather">
+                    <h2>Weather <span class="weather-icon">⛅</span></h2>
+                    <p>Today's forecast is sunny with scattered clouds.</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                    <img src="images/weather.svg" alt="Weather Icon" class="weather-icon-mobile">
+                </section>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> Franca Harris, Costa Rica.</p>
         <p id="lastModified"></p>
-       
     </footer>
 </body>
 </html>
