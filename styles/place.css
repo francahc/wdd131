@@ -6,6 +6,7 @@
 :root {
     --main-color: rgb(239, 48, 48);
     --secondary-color: #3f85cb;
+    --background-color: #f9f9f9;
 }
 
 body {
