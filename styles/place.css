@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --main-color: rgb(239, 48, 48);
+    --secondary-color: #3f85cb;
+}
 
 body {
     font-family: 'Roboto', sans-serif; 
@@ -40,6 +44,12 @@ header {
     margin: 0 auto; 
     padding: 10px; 
 }
+.section-container::after {
+    content: ""; /* Necesario para que funcione */
+    display: block; /* Cambiar según sea necesario */
+    clear: both; /* Se utiliza para limpiar flotantes */
+}
+
 
 .data, .weather {
     background-color: rgba(255, 255, 255, 0.8); 
