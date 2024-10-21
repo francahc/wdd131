@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Photo Album</title>
+    <meta name="description" content="Explore a collection of beautiful temple images showcasing architectural wonders. Discover the significance of each temple in this visual album.">
+    <meta name="author" content="Franca Harris">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)">
+
+    
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="grid-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Franca Harris, Costa Rica.</p>
+        <p id="lastModified"></p>
+       
+    </footer>
+</body>
+</html>

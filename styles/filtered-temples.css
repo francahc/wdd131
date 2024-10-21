@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+}
+
+header {
+    background-color: rgb(76, 175, 175); 
+    color: white; 
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 15px;
+}
+
+nav {
+    display: block; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: none; 
+}
+
+nav ul.show {
+    display: flex;
+    flex-direction: column; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #1e5e6f; 
+    text-decoration: underline double;
+}
+
+.hamburger {
+    display: block; 
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    color: rgb(76, 175, 175); ; 
+    font-size: 2rem;
+}
+.temple-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(76, 175, 175);
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    color: #f9f9f9;
+}
+
+figure {
+    text-align: center; 
+}
+
+img {
+    width: 400px; 
+    height: 300px; 
+    border: 1px solid rgb(76, 175, 175); ; 
+    padding: 1px;
+    box-shadow: 0 0 30px rgb(76, 175, 175); 
+    
+}
+
+footer {
+    background-color: rgb(76, 175, 175);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+button {
+    margin: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    display: flex; 
+    justify-content: center; 
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hamburger {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/*grandes*/
+@media screen and (min-width: 601px) {
+    #nav-menu {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    #hamburger {
+        display: none; 
+    }
+}
