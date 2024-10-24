@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="description" content="Review Confirmation">
+    <meta name="author" content="Franca Harris">
+
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 600px)">
+   
+
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your review has been submitted successfully.</h2>
+            <p>We appreciate your feedback on <strong id="product-name"></strong>.</p>
+            <p>If you want to submit another review, click the button below:</p>
+            <a href="product-review.html" class="button">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Franca Harris, Costa Rica.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+   
+    <script>
+        
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+
+        
+        const params = new URLSearchParams(window.location.search);
+        const productName = params.get('product');
+        if (productName) {
+            document.getElementById('product-name').textContent = productName;
+        }
+    </script>
+</body>
+</html>
