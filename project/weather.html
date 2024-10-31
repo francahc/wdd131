@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content=".">
+    <title>Dynamic Weather Site</title>
+    <meta name="description" content="Check the current weather and local time for any city.">
     <meta name="author" content="Franca Harris">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="stylesheet" href="styles/siteplan-large.css" media="screen and (min-width: 600px)">
-    <script src="scripts/siteplan.js" defer></script>
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/weather-large.css" media="screen and (min-width: 600px)">
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -19,25 +19,40 @@
         <h1>Welcome to the Dynamic Weather Site</h1>
         <nav>
             <ul>
-                
-                <li><a href="siteplan.html">Site Plan</a></li>
+                <li><a href="siteplan.html">siteplan</a></li>
+                <li><a href="weather.html">Check Weather</a></li> 
+                <li><a href="form.html">Product Reviews</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         <section>
-            <h2>Check the weather</h2>
-            <form id="weatherForm">
-                <input type="text" id="city" placeholder="Enter the City" required>
-                <button type="submit">Check</button>
+            <div id="cityNameDisplay" aria-live="polite"></div> 
+            
+            <form id="weatherForm" aria-label="Weather Search Form">
+                <input type="text" id="city" placeholder="Enter the city and country" required aria-label="City name">
+                <button type="submit">Search</button>
             </form>
-            <div id="weatherResult"></div>
+            
+            
+            <img id="weatherIcon" src="https://img.icons8.com/ios-filled/100/000000/sun.png" alt="Weather icon" style="display:none;">
+
+
+
+
+    
+            <div id="weatherResult" aria-live="polite"></div> 
         </section>
+        
+        <aside id="threeDayForecast" aria-live="polite" style="margin-top: 20px;">
+           
+        </aside>
     </main>
+    
     <footer>
         <p>&copy; <span id="currentyear"></span> Franca Harris, Costa Rica.</p>
         <p id="lastModified"></p>
-
     </footer>
 
 </body>
