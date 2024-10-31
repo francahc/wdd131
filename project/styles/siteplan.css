@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #007BFF;
-    color: white;
+    background-color: #D9EEF2;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
@@ -29,8 +29,8 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #D9EEF2;
+    color: rgb(0, 0, 0);
     position: relative;
     width: 100%;
 }
